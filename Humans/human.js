@@ -1,14 +1,14 @@
+
 export class Human {
   static minLifeTime = 18;
   static maxLifeTime = 100;
   age = 0;
   lifeTime = Math.floor(Math.random() * (Human.maxLifeTime - Human.minLifeTime + 1) + Human.minLifeTime);
 
-  constructor(name, eyesColor, gender, parents = []) {
+  constructor(name, eyesColor, gender) {
     this.name = name;
     this.eyesColor = eyesColor;
     this.gender = gender;
-    this.parents = parents;
   }
 
   growing() {
@@ -25,7 +25,5 @@ export class Human {
 
     this.age++;
   }
-
-
 
 }
